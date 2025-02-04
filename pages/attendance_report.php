@@ -51,7 +51,10 @@ if(!empty($class_month)){
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                 <label for="class_month" class="form-label">Fecha</label>
-                                <input type="month" name="class_month" id="class_month" class="form-control" value="<?= $class_month ?? '' ?>" placeholder="Año - Mes" required="required">
+                                <input type="month" name="class_month" id="class_month" 
+                                    class="form-control" value="<?= $class_month ?? '' ?>" 
+                                    required="required"
+                                    style="-webkit-text-fill-color: transparent; color: transparent;">
                             </div>
                         </div>
                     </div>

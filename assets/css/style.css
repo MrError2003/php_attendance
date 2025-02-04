@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+/* IMPORTANTE:
+------------------------------------
+Si quiere que los cambios de la hoja de estilos se apliquen 
+en la vista primero limpiar caché del navegador 
+------------------------------------
+*/
+
 :root {
     --font-orbiton: 'Orbitron', sans-serif;
     --font-ubuntu: 'Ubuntu', sans-serif;
@@ -30,7 +37,7 @@ div.page-title * {
     font-weight: 600;
     letter-spacing: 2px;
     color: #5e5e5e;
-    /* font-family: var(--font-arial); */
+    font-family: var(--font-arial);
 }
 
 .flashdata {
