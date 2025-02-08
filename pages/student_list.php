@@ -1,4 +1,4 @@
-<div class="page-title mb-3">Lista de estudiantes</div>
+<div><h1><i class="bi bi-backpack"></i> Lista de estudiantes</h1></div>
 <hr>
 <?php 
 $studentList = $actionClass->list_student();
@@ -8,7 +8,7 @@ $studentList = $actionClass->list_student();
         <div class="card shadow">
             <div class="card-header rounded-0">
                 <div class="d-flex w-100 justify-content-end align-items-center">
-                    <button class="btn btn-sm rounded-0 btn-primary" type="button" id="add_student"><i class="far fa-plus-square"></i> Add New</button>
+                    <button class="btn btn-sm rounded-1 btn-primary" type="button" id="add_student"><i class="bi bi-plus-square"></i> Agregar estudiante</button>
                 </div>
             </div>
             <div class="card-body rounded-0">
@@ -38,8 +38,8 @@ $studentList = $actionClass->list_student();
                                         <td class="px-2 py-1"><?= $row['name'] ?></td>
                                         <td class="text-center px-2 py-1">
                                             <div class="input-group input-group-sm justify-content-center">
-                                                <button class="btn btn-sm btn-outline-primary rounded-0 edit_student" type="button" data-id="<?= $row['id'] ?>" title="Edit"><i class="fas fa-edit"></i></button>
-                                                <button class="btn btn-sm btn-outline-danger rounded-0 delete_student" type="button" data-id="<?= $row['id'] ?>" title="Delete"><i class="fas fa-trash"></i></button>
+                                                <button class="btn btn-sm btn-primary rounded-1 edit_student me-2" type="button" data-id="<?= $row['id'] ?>" title="Edit"><i class="bi bi-pencil-fill"></i></button>
+                                                <button class="btn btn-sm btn-danger rounded-1 delete_student" type="button" data-id="<?= $row['id'] ?>" title="Delete"><i class="bi bi-trash-fill"></i></button>
                                             </div>
                                         </td>
                                     </tr>
@@ -96,3 +96,4 @@ $studentList = $actionClass->list_student();
         })
     })
 </script>
+

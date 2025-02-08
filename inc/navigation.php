@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sistema de asistencia</a>
+        <a class="navbar-brand" href="#"><img src="https://css.mintic.gov.co/mt/mintic/new/img/logo_mintic_24_dark.svg" alt="logo" width="50px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -24,4 +24,6 @@
             </ul>
         </div>
     </div>
-    </nav>
+</nav>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">

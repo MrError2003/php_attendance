@@ -1,4 +1,4 @@
-<div class="page-title mb-3">Reporte de asistencias</div>
+<div><h1><i class="bi bi-calendar2-check"></i> Reporte de asistencia</h1></div>
 <hr>
 <?php 
 // $studentList = $actionClass->list_student();
@@ -85,7 +85,7 @@ if(!empty($class_month)){
                             <table id="attendance-rpt-tbl" class="table table-bordered">
                                 <thead>
                                     <tr class="bg-primary bg-opacity-75">
-                                        <th class="text-center bg-primary text-light" style="width:300px !important">Estudiantes</th>
+                                        <th class="text-center bg-primary text-light">Estudiantes</th>
                                         <?php for($i=1; $i <= $monthLastDay; $i++): ?>
                                             <th class="text-center bg-transparent text-light" style="width:80px !important"><?= $i ?></th>
                                         <?php endfor; ?>
@@ -99,7 +99,7 @@ if(!empty($class_month)){
                                     <?php if(!empty($studentList) && is_array($studentList)): ?>
                                     <?php foreach($studentList as $row): ?>
                                         <tr class="student-row">
-                                            <td class="px-2 py-1 text-dark-emphasis fw-bold">
+                                            <td class="px-2 py-1" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                                 <input type="hidden" name="student_id[]" value="<?= $row['id'] ?>">
                                                 <?= $row['name'] ?>
                                             </td>

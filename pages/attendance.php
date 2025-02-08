@@ -1,4 +1,4 @@
-<div class="page-title mb-3">Administrar asistencias de clase</div>
+<div><h1><i class="bi bi-clipboard2-check"></i> Asistencia de clase</h1></div>
 <hr>
 <?php 
 // $studentList = $actionClass->list_student();
@@ -41,7 +41,7 @@ $studentList = $actionClass->attendanceStudents($class_id, $class_date);
             <?php if(!empty($class_id) && !empty($class_date)): ?>
             <div class="card shadow mb-3">
                 <div class="card-header rounded-0">
-                    <div class="card-title">Hoja de asistencias</div>
+                    <div><h3> Hoja de asistencias</h3></div>
                 </div>
                 <div class="card-body">
                     <div class="container-fluid">
@@ -65,7 +65,7 @@ $studentList = $actionClass->attendanceStudents($class_id, $class_date);
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th class="text-center px-2 py-1 text-dark-emphasis">Seleccionar todos</th>
+                                        <th class="text-center px-2 py-1"><u>Seleccionar todos</u></th>
                                         <th class="text-center px-2 py-1 text-dark-emphasis">
                                             <div class="form-check d-flex w-100 justify-content-center">
                                                 <input class="form-check-input checkAll" type="checkbox" id="PCheckAll">
@@ -98,7 +98,7 @@ $studentList = $actionClass->attendanceStudents($class_id, $class_date);
                                     <?php if(!empty($studentList) && is_array($studentList)): ?>
                                     <?php foreach($studentList as $row): ?>
                                         <tr class="student-row">
-                                            <td class="px-2 py-1 text-dark-emphasis fw-bold">
+                                            <td class="px-2 py-1">
                                                 <input type="hidden" name="student_id[]" value="<?= $row['id'] ?>">
                                                 <?= $row['name'] ?>
                                             </td>

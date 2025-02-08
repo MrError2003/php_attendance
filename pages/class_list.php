@@ -1,4 +1,4 @@
-<div class="page-title mb-3">Lista de clases</div>
+<div><h1><i class="bi bi-card-list"></i> Lista de clases</h1></div>
 <hr>
 <?php 
 $classList = $actionClass->list_class();
@@ -8,7 +8,7 @@ $classList = $actionClass->list_class();
         <div class="card shadow">
             <div class="card-header rounded-0">
                 <div class="d-flex w-100 justify-content-end align-items-center">
-                    <button class="btn btn-sm rounded-0 btn-primary" type="button" id="add_class"><i class="far fa-plus-square"></i> Add New</button>
+                    <button class="btn btn-sm rounded-1 btn-primary" type="button" id="add_class"><i class="bi bi-plus-square"></i> Agregar clase</button>
                 </div>
             </div>
             <div class="card-body rounded-0">
@@ -35,8 +35,9 @@ $classList = $actionClass->list_class();
                                         <td class="px-2 py-1"><?= $row['name'] ?></td>
                                         <td class="text-center px-2 py-1">
                                             <div class="input-group input-group-sm justify-content-center">
-                                                <button class="btn btn-sm btn-outline-primary rounded-0 edit_class" type="button" data-id="<?= $row['id'] ?>" title="Edit"><i class="fas fa-edit"></i></button>
-                                                <button class="btn btn-sm btn-outline-danger rounded-0 delete_class" type="button" data-id="<?= $row['id'] ?>" title="Delete"><i class="fas fa-trash"></i></button>
+                                                <button class="btn btn-sm btn-primary rounded-1 edit_class me-2" type="button" data-id="<?= $row['id'] ?>" title="Edit"><i class="bi bi-pencil-fill"></i></button>
+
+                                                <button class="btn btn-sm btn-danger rounded-1 delete_class" type="button" data-id="<?= $row['id'] ?>" title="Delete"><i class="bi bi-trash-fill"></i></button>
                                             </div>
                                         </td>
                                     </tr>
@@ -93,3 +94,5 @@ $classList = $actionClass->list_class();
         })
     })
 </script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
